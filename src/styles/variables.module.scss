@@ -1,0 +1,29 @@
+// Text colors
+// ==================================
+$text-primary: #ffffff;   
+$text-secondary: #ED145B; 
+$text-tertiary: #8A959B;  
+$text-quaternary: #949B99; 
+
+// Background colors
+// ==================================
+$bg-primary: #000000;     
+$bg-secondary: #202121;    
+
+// General colors
+// ==================================
+$color-primary: #ED145B;  
+$color-secondary: #8A959B; 
+$color-tertiary: #949B99; 
+
+:export {
+  text-primary: $text-primary;
+  text-secondary: $text-secondary;
+  text-tertiary: $text-tertiary;
+  text-quaternary: $text-quaternary;
+  bg-primary: $bg-primary;
+  bg-secondary: $bg-secondary;
+  primary-color: $color-primary;
+  secondary-color: $color-secondary;
+  tertiary-color: $color-tertiary;
+}
