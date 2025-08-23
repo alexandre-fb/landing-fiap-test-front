@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import styles from "./Navbar.module.scss";
+import styles from "./NavbarSection.module.scss";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";

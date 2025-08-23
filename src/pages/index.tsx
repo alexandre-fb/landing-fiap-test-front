@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import styles from "@/styles/Home.module.scss"; 
-import Navbar from "@/components/sections/Navbar/Navbar";
+import NavbarSection from "@/components/sections/Navbar/NavbarSection";
 
 export default function Home() {
   const container = useRef<HTMLDivElement>(null);
@@ -31,7 +31,7 @@ export default function Home() {
 
       <div>
         <header>
-          <Navbar />
+          <NavbarSection />
         </header>
         <main>
           <section>
