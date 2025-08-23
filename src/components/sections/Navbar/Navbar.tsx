@@ -17,7 +17,7 @@ export default function Navbar() {
         onEnter: () => navbarContentRef.current?.classList.add(styles.scrolled),
         onLeaveBack: () =>
           navbarContentRef.current?.classList.remove(styles.scrolled),
-      });
+      }); 
     }
 
     if (scrollBarRef.current) {

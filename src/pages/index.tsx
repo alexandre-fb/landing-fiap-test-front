@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import styles from "@/styles/Home.module.scss"; 
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/components/sections/Navbar/Navbar";
 
 export default function Home() {
   const container = useRef<HTMLDivElement>(null);
