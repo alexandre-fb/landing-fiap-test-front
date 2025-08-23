@@ -16,6 +16,13 @@ $color-primary: #ED145B;
 $color-secondary: #8A959B; 
 $color-tertiary: #949B99; 
 
+// breakpoints
+// ==================================
+$breakpoint-xs: 414px;
+$breakpoint-sm: 599px;  
+$breakpoint-md: 1024px;  
+$breakpoint-lg: 1440px;  
+
 :export {
   text-primary: $text-primary;
   text-secondary: $text-secondary;
@@ -26,4 +33,9 @@ $color-tertiary: #949B99;
   primary-color: $color-primary;
   secondary-color: $color-secondary;
   tertiary-color: $color-tertiary;
+  breakpoint-xs: $breakpoint-xs;
+  breakpoint-sm: $breakpoint-sm;
+  breakpoint-md: $breakpoint-md;
+  breakpoint-lg: $breakpoint-lg;
+
 }
