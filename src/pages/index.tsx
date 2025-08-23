@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import styles from "@/styles/Home.module.scss"; 
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function Home() {
   const container = useRef<HTMLDivElement>(null);
@@ -22,7 +23,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>FIAP - Landing Teste</title>
         <meta name="description" content="Cursos Presenciais e On-line: Graduação, Pós-Graduação/MBA e Cursos de Curta Duração. FIAP é Tecnologia, Inovação e Empreendedorismo." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -30,11 +31,8 @@ export default function Home() {
 
       <div>
         <header>
-          <div className={styles.headerContainer}>
-            <h1 className={styles.title}>Header</h1>
-          </div>
+          <Navbar />
         </header>
-
         <main>
           <section>
             <div className={styles.sectionContainer}>

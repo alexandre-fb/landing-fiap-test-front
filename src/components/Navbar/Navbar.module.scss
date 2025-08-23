@@ -1,0 +1,48 @@
+@use "../../styles/variables.module.scss" as vars;
+
+.navbarContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  background-color: transparent;
+  height: 8.8rem;
+  transition: background-color 200ms ease-in-out, height 200ms ease-in-out;
+
+  &.scrolled {
+    background-color: vars.$bg-secondary;
+    height: 8rem;
+  }
+
+  .scrollBar {
+    width: 0;
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+    right: 0;
+    height: 0.3rem;
+    background-color: vars.$color-primary;
+    z-index: 1001;
+    transition: width 0.1s ease-out;
+  }
+  
+  .logoContainer {
+    position: relative;
+    width: 14.401rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    @media (max-width: vars.$breakpoint-sm) {
+      width: 8.4rem;
+    }
+  }
+}
+
