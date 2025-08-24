@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Navbar() {
   const scrollBarRef = useRef<HTMLDivElement>(null);
   const navbarContentRef = useRef<HTMLDivElement>(null);
-  const logoRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (navbarContentRef.current) {
@@ -39,14 +38,6 @@ export default function Navbar() {
       });
     }
 
-    if (logoRef.current) {
-      gsap.fromTo(
-        logoRef.current,
-        { opacity: 0 },
-        { opacity: 1, duration: 1, delay: 0.2, ease: "power2.out" }
-      );
-    }
-
     return () => {
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };
@@ -63,7 +54,7 @@ export default function Navbar() {
         <div ref={scrollBarRef} className={styles.scrollBar} />
 
         {/* Logo */}
-        <div ref={logoRef} className={styles.logoContainer}>
+        <div className={styles.logoContainer}>
           <Image
             src="/images/logo-fiap.svg"
             alt="Logo FIAP"

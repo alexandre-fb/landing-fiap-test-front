@@ -44,10 +44,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    opacity: 0;
+    animation: fadeIn 0.4s ease forwards;
   
     @media (max-width: vars.$breakpoint-sm) {
       width: 8.4rem;
     }
   }
 }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 
