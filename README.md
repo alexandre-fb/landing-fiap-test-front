@@ -77,6 +77,14 @@ Antes de iniciar a implementação, organizei o ambiente e dividi a tarefa em et
 
 ## ⚡ Principais Desafios Encontrados
 
+### Adaptação do Vue.js para o React
+
+Um dos principais desafios foi a mudança de contexto entre frameworks.  
+Nos últimos anos, minha experiência foi focada em **Vue.js**, então, ao desenvolver este projeto em **React**, precisei me adaptar e relembrar conceitos específicos da biblioteca.
+
+Apesar do desafio inicial, essa adaptação foi uma oportunidade valiosa para reforçar meus conhecimentos em React.
+
+
 ### Ajuste do cálculo do REM
 
 Ao analisar outras páginas da FIAP, percebi que elas utilizam o rem calculado com base na largura da tela. Para manter essa consistência, organizei o cálculo da seguinte forma:
