@@ -1,13 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import styles from "./CursosSection.module.scss";
-import MarqueeText from "../../global/MarqueeText/MarqueeText";
+import MarqueeText from "../../../global/MarqueeText/MarqueeText";
 
 import { courses, courseListByCategory, courseValue } from "../CoursesData";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import CourseContent from "../components/CourseContent/CourseContent";
+import SectionTitle from "../../../global/SectionTitle/SectionTitle";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function CursosSection() {
@@ -26,8 +27,7 @@ export default function CursosSection() {
       
       {/* title */}
       <div className={styles.titleContainer}>
-        <h2 className={styles.title}>Cursos</h2>
-        <h4 className={styles.subtitle}>Cursos de Curta Duração</h4>
+        <SectionTitle title="Cursos" subtitle="Cursos de Curta Duração" />
       </div>
 
       {/* tab navigation */}
