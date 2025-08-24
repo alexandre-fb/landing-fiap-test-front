@@ -5,6 +5,9 @@ import styles from "@/styles/Home.module.scss";
 import NavbarSection from "@/components/sections/Navbar/NavbarSection";
 import HeaderSection from "@/components/sections/Header/HeaderSection";
 import IntroSection from "@/components/sections/Intro:/IntroSection";
+import CursosSection from "@/components/sections/Cursos/CursosSection/CursosSection";
+import CursosMobileSection from "@/components/sections/Cursos/CursoMobileSection/CursosMobileSection";
+
 export default function Home() {
   const container = useRef<HTMLDivElement>(null);
 
@@ -44,9 +47,8 @@ export default function Home() {
           </section>
 
           <section>
-            <div className={styles.sectionContainer}>
-              <h2 className={styles.title}>Section</h2>
-            </div>
+            <div className={styles.cursosDesktop}><CursosSection /></div>
+            <div className={styles.cursosMobile}><CursosMobileSection /></div>
           </section>
         </main>
       </div>

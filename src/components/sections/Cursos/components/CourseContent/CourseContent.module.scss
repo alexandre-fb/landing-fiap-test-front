@@ -1,0 +1,53 @@
+@use "../../../../../styles/variables.module.scss" as vars;
+
+.courseContainer {
+  .courseTitle {
+    font-size: 5.5rem;
+    margin-bottom: 10rem;
+
+    @media (max-width: vars.$breakpoint-md) {
+      display: none;
+    }
+  }
+
+  .courseContent {
+    display: flex;
+    flex-direction: column;
+    width: 74.8rem;
+
+    @media (max-width: vars.$breakpoint-md) {
+      width: 100%;
+    }
+
+    .courseContentItem {
+      display: flex;
+      align-items: flex-end;
+      color: vars.$text-tertiary;
+      border-bottom: 1px solid;
+      padding: 2rem 0;
+      transition: color 200ms ease;
+
+      @media (max-width: vars.$breakpoint-md) {
+        border-top: 1px solid;
+        border-bottom: none;
+      } 
+
+      &:hover {
+        color: vars.$text-secondary;
+      }
+
+      h5 {
+        font-size: 2.2rem;
+        margin-right: 2.2rem;
+        color: inherit;
+      }
+
+      span {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        color: inherit;
+      }
+    }
+  }
+}

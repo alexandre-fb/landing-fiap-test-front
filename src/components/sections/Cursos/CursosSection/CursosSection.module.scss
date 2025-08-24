@@ -1,0 +1,90 @@
+@use "../../../../styles/variables.module.scss" as vars;
+
+.cursosContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content;
+  grid-template-areas:
+    "title tab"
+    "detail detail";
+  gap: 2rem;
+  min-height: 100vh;
+  max-width: 145rem;
+  margin: 25rem auto;
+
+  @media (max-width: vars.$breakpoint-md) {
+    padding: 5.5rem 2rem;
+    min-height: auto;
+  }
+
+  .titleContainer {
+    grid-area: title;
+    align-self: start;
+
+    .title {
+      font-size: 9.2rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .subtitle {
+      font-size: 2.2rem;
+      color: vars.$text-secondary;
+    }
+  }
+
+  .tabNavigation {
+    width: 100%;
+    grid-area: tab;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 3rem;
+
+    .tabList {
+      display: flex;
+      gap: 9rem;
+      list-style: none;
+
+      .tabItem {
+        position: relative;
+        font-size: 1.7rem;
+        color: vars.$text-tertiary;
+        font-weight: 500;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        text-transform: uppercase;
+
+        &:hover {
+          color: vars.$text-primary;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -1.2rem;
+          left: 0;
+          width: 0;
+          height: 0.6rem;
+          background: vars.$text-secondary;
+          transition: width 0.2s ease;
+          z-index: 1;
+          opacity: 1;
+        }
+
+        &.tabItem__active::before {
+          width: 3.9rem;
+          left: 0;
+          transform: none;
+        }
+
+        &.tabItem__active {
+          color: vars.$text-primary;
+        }
+      }
+    }
+  }
+
+  .courseDetail {
+    grid-area: detail;
+    padding-top: 10rem;
+  }
+}
