@@ -1,0 +1,24 @@
+@use "../../../styles/variables.module.scss" as vars;
+
+.titleContainer {
+  grid-area: title;
+  align-self: start;
+
+  .title {
+    font-size: 9.2rem;
+    margin-bottom: 1.6rem;
+
+    @media (max-width: vars.$breakpoint-md) {
+      font-size: 5.2rem;
+    } 
+  }
+
+  .subtitle {
+    font-size: 2.2rem;
+    color: vars.$text-secondary;
+
+    @media (max-width: vars.$breakpoint-md) {
+      font-size: 1.8rem;
+    } 
+  }
+}
