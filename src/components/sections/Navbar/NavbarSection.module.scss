@@ -1,5 +1,10 @@
 @use "../../../styles/variables.module.scss" as vars;
 
+.nav {
+  display: block;
+  height: 8.8rem;
+}
+
 .navbarContent {
   display: flex;
   align-items: center;
@@ -13,7 +18,7 @@
 
   background-color: transparent;
   height: 8.8rem;
-  transition: background-color 200ms ease-in-out, height 200ms ease-in-out;
+  transition: background-color 180ms ease-in-out, height 180ms ease-in-out;
 
   &.scrolled {
     background-color: vars.$bg-secondary;

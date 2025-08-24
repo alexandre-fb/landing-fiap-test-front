@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Navbar() {
   const scrollBarRef = useRef<HTMLDivElement>(null);
   const navbarContentRef = useRef<HTMLDivElement>(null);
+  const logoRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (navbarContentRef.current) {
@@ -17,7 +18,7 @@ export default function Navbar() {
         onEnter: () => navbarContentRef.current?.classList.add(styles.scrolled),
         onLeaveBack: () =>
           navbarContentRef.current?.classList.remove(styles.scrolled),
-      }); 
+      });
     }
 
     if (scrollBarRef.current) {
@@ -38,20 +39,31 @@ export default function Navbar() {
       });
     }
 
+    if (logoRef.current) {
+      gsap.fromTo(
+        logoRef.current,
+        { opacity: 0 },
+        { opacity: 1, duration: 1, delay: 0.2, ease: "power2.out" }
+      );
+    }
+
     return () => {
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };
   }, []);
 
   return (
-    <nav role="navigation" aria-label="Barra de navegação">
+    <nav
+      className={styles.nav}
+      role="navigation"
+      aria-label="Barra de navegação"
+    >
       <div ref={navbarContentRef} className={styles.navbarContent}>
-
         {/* Barra de progresso */}
         <div ref={scrollBarRef} className={styles.scrollBar} />
 
         {/* Logo */}
-        <div className={styles.logoContainer}>
+        <div ref={logoRef} className={styles.logoContainer}>
           <Image
             src="/images/logo-fiap.svg"
             alt="Logo FIAP"
