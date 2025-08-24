@@ -1,9 +1,9 @@
 @use "../../../styles/variables.module.scss" as vars;
 
 .faqContainer {
-  min-height: 100vh;
   max-width: 145rem;
   margin: 0 auto;
+  padding-bottom: 10rem;
 
   @media (max-width: vars.$breakpoint-md) {
     padding: 5.5rem 2rem;

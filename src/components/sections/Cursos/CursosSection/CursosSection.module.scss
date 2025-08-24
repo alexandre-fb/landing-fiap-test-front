@@ -3,14 +3,14 @@
 .cursosContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content;
+  grid-template-rows: min-content 1fr;
   grid-template-areas:
     "title tab"
     "detail detail";
   gap: 2rem;
-  min-height: 100vh;
   max-width: 145rem;
   margin: 25rem auto;
+  padding-bottom: 10rem;
 
   @media (max-width: vars.$breakpoint-md) {
     padding: 5.5rem 2rem;
