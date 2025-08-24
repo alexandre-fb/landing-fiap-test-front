@@ -8,7 +8,9 @@ O objetivo principal foi criar uma **Landing Page** utilizando boas práticas de
 ⚙️ **Para rodar localmente**, siga as instruções da seção **Como Rodar Localmente**.
 
 
+
 ---
+
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -20,7 +22,9 @@ O objetivo principal foi criar uma **Landing Page** utilizando boas práticas de
 - **[Vercel](https://vercel.com/)** → Plataforma de hospedagem e deploy contínuo para aplicações Next.js.
 
 
+
 ---
+
 
 ## 🏁 Como Rodar Localmente
 
@@ -45,7 +49,9 @@ yarn dev
 
 Abra [http://localhost:3000](http://localhost:3000) no seu navegador para visualizar o projeto.
 
+
 ---
+
 
 ## 📋 Preparação para o Desenvolvimento
 
@@ -72,7 +78,9 @@ Antes de iniciar a implementação, organizei o ambiente e dividi a tarefa em et
 📌 Esse roadmap serviu como guia de desenvolvimento e também como checklist para acompanhar o progresso.  
 
 
+
 ---
+
 
 
 ## ⚡ Principais Desafios Encontrados
@@ -129,7 +137,9 @@ Por conta disso:
 - Alguns valores de espaçamento e proporção tive que ajustar manualmente.  
 - Em certos casos, fiz cálculos baseados em referências visuais ou em outras telas semelhantes.  
 
+
 ---
+
 
 ## ✅ Conclusão
 
@@ -139,3 +149,14 @@ Gostei muito de desenvolver a Landing Page, aplicar animações e explorar solu�
 Gostaria de ter tido mais tempo para realizar uma revisão mais aprofundada do código, mas devido à rotina de trabalho e compromissos pessoais e familiares, não consegui dedicar tanto tempo a essa etapa final.  
 
 De toda forma, fico totalmente **à disposição para qualquer esclarecimento** sobre as decisões técnicas tomadas ou para discutir melhorias que poderiam ser implementadas no projeto.  
+
+
+---
+
+
+## ✏️ Autor
+
+**Alexandre Bisognin**  
+
+[Linkedin](https://www.linkedin.com/in/alexandre-fb)
+
