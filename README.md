@@ -61,9 +61,9 @@ Antes de iniciar a implementação, organizei o ambiente e dividi a tarefa em et
 
 - [ ] **Desenvolvimento das seções**  
   _Obs.: Para cada seção, testar responsividade e compatibilidade entre os principais navegadores._  
-  - [ ] Navbar com indicação de progresso de navegação da página  
-  - [ ] Header  
-  - [ ] Intro  
+  - [ X ] Navbar com indicação de progresso de navegação da página  
+  - [ X ] Header  
+  - [ X ] Intro  
   - [ ] Cursos  
   - [ ] FAQ  
   - [ ] Bônus: transição com efeito de água
@@ -104,3 +104,19 @@ Para facilitar o entendimento e a conversão dos valores do Figma (em px) para a
 - Na tela 414px, 1rem ≈ 10px
 
 Dessa forma, consigo trabalhar de forma consistente com os tamanhos definidos nos layouts de desktop e mobile, garantindo que a responsividade e a escala de elementos estejam corretas.
+
+### Diferença de `font-weight` entre Figma e renderização real
+
+Durante os testes de tipografia, percebi que os valores de `font-weight` definidos no Figma não correspondiam exatamente ao resultado no navegador.  
+Por exemplo:  
+- O `500` do Figma ficava mais pesado do que o esperado.  
+- Para corrigir, precisei ajustar para um valor menor para chegar a um resultado visual equivalente.  
+
+Esse ajuste fino foi importante para manter a fidelidade visual com o layout fornecido e garantir consistência entre design e implementação.  
+
+### Limitação de acesso ao **Dev Mode** do Figma
+
+Outro desafio foi a falta de acesso ao **Dev Mode** do Figma, o que impossibilitou inspecionar diretamente espaçamentos, medidas precisas e detalhes técnicos.  
+Por conta disso:  
+- Alguns valores de espaçamento e proporção tive que ajustar manualmente.  
+- Em certos casos, fiz cálculos baseados em referências visuais ou em outras telas semelhantes.  
