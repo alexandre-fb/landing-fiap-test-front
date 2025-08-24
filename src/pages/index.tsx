@@ -8,6 +8,7 @@ import IntroSection from "@/components/sections/Intro/IntroSection";
 import CursosSection from "@/components/sections/Cursos/CursosSection/CursosSection";
 import CursosMobileSection from "@/components/sections/Cursos/CursoMobileSection/CursosMobileSection";
 import FaqSection from "@/components/sections/FAQ/FaqSection";
+import WaterSection from "@/components/sections/Water/WaterSection";
 
 export default function Home() {
   const container = useRef<HTMLDivElement>(null);
@@ -45,6 +46,10 @@ export default function Home() {
 
           <section>
             <IntroSection />
+          </section>
+
+          <section className={styles.waterSection}>
+            <WaterSection />
           </section>
 
           <section>
