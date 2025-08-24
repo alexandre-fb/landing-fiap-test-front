@@ -8,16 +8,18 @@ export const courses = [
 
 export const courseListByCategory: Record<courseValue, { title: string; modality: string }[]> = {
   tecnologia: [
-    { title: "Conteúdo 1", modality: "Digital" },
-    { title: "Conteúdo 2", modality: "Inovação" },
-    { title: "Conteúdo 3", modality: "Negócios" },
+    { title: "Big Data Ecosystem", modality: "remoto • live" },
+    { title: "Creating Dashboards for BI", modality: "remoto • live" },
+    { title: "Big Data Science - Machine Learning & Data Mining", modality: "remoto • live + multimídia " },
+    { title: "Storytelling", modality: " remoto • live" }
+
   ],
   inovacao: [
-    { title: "Inovação 1", modality: "Workshop" },
-    { title: "Inovação 2", modality: "Online" },
+    { title: "Inovação 1", modality: "remoto • live" },
+    { title: "Inovação 2", modality: "remoto • live + multimídia" },
   ],
   negocios: [
-    { title: "Negócios 1", modality: "Presencial" },
-    { title: "Negócios 2", modality: "EAD" },
+    { title: "Negócios 1", modality: "remoto • live + multimídia" },
+    { title: "Negócios 2", modality: "remoto • live" },
   ],
 };
