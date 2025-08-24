@@ -21,6 +21,7 @@ export default function IntroSection() {
     ...lastScrollMarqueeItems,
   ];
 
+  const containerRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
   const firstMarqueeScrollRef = useRef<HTMLDivElement>(null);
   const lastMarqueeScrollRef = useRef<HTMLDivElement>(null);
@@ -38,7 +39,7 @@ export default function IntroSection() {
             ease: "power3.out",
             scrollTrigger: {
               trigger: imageRef.current,
-              start: "top 50%",
+              start: "top 70%",
               toggleActions: "play none none none",
             },
           }
@@ -71,13 +72,13 @@ export default function IntroSection() {
           },
         }); 
       }
-    }, []);
+    }, containerRef);
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <div className={styles.introContainer}>
+    <div className={styles.introContainer} ref={containerRef}>
       {/* infinit marquee */}
       <div className={styles.infiniteMarqueeContainer}>
         <div className={styles.infiniteMarqueeItem}>
@@ -105,6 +106,7 @@ export default function IntroSection() {
             alt="Mulher sentada em uma almofada em um ambiente moderno com fones de ouvido e uma expressão pensativa."
             fill
             style={{ objectFit: "contain" }}
+            priority
           />
         </div>
 
