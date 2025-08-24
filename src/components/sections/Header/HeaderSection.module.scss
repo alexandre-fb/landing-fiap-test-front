@@ -1,0 +1,93 @@
+@use "../../../styles/variables.module.scss" as vars;
+
+.headerContainer {
+  padding: 0 2rem;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: vars.$breakpoint-md) {
+    padding: 5.5rem 2rem;
+    min-height: auto;
+  }
+
+  .textWrapper {
+    position: relative;
+    top: -5rem;
+    width: 140rem;
+
+    @media (max-width: vars.$breakpoint-md) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .headerTitle {
+      font-size: 11rem;
+      font-weight: 400;
+      letter-spacing: -0.2rem;
+      line-height: 0.95;
+      position: absolute;
+      z-index: 1;
+      top: -4rem;
+      left: 7rem;
+      width: 100%;
+
+      span {
+        display: block;
+      }
+
+      .indented {
+        text-indent: 7.4rem;
+      }
+
+      @media (max-width: vars.$breakpoint-md) {
+        font-size: 6rem;
+        line-height: 1;
+        top: 18rem;
+        left: 5rem;
+
+        .indented {
+          text-indent: 4rem;
+        }
+      }
+
+      @media (max-width: vars.$breakpoint-sm) {
+        font-size: 3.6rem;
+        top: 9rem;
+        left: 1.5rem;
+        width: 100%;
+
+        .indented {
+          text-indent: 1.3rem;
+        }
+      }
+    }
+
+    .headerSubtitle {
+      font-size: 35rem;
+      font-weight: 800;
+      color: vars.$text-quinary;
+      line-height: 0.9;
+
+      .sobreRight {
+        color: inherit;
+      }
+
+      @media (max-width: vars.$breakpoint-md) {
+        font-size: 28rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.5rem;
+      }
+
+      @media (max-width: vars.$breakpoint-sm) {
+        font-size: 15rem;
+      }
+    }
+  }
+}

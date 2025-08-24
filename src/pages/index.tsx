@@ -3,6 +3,7 @@ import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import styles from "@/styles/Home.module.scss"; 
 import NavbarSection from "@/components/sections/Navbar/NavbarSection";
+import HeaderSection from "@/components/sections/Header/HeaderSection";
 
 export default function Home() {
   const container = useRef<HTMLDivElement>(null);
@@ -35,9 +36,7 @@ export default function Home() {
         </header>
         <main>
           <section>
-            <div className={styles.sectionContainer}>
-              <h2 className={styles.title}>Section</h2>
-            </div>
+            <HeaderSection />
           </section>
 
           <section>
