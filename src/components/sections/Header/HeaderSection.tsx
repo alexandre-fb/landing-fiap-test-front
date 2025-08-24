@@ -41,7 +41,7 @@ export default function HeaderSection() {
   }, []);
 
   return (
-    <header className={styles.headerContainer}>
+    <div className={styles.headerContainer}>
       <div className={styles.textWrapper}>
         <h1 ref={titleRef} className={styles.headerTitle}>
           <span className={styles.indented}>A Melhor Faculdade</span>
@@ -51,6 +51,6 @@ export default function HeaderSection() {
           SOB<span className={styles.sobreRight}>RE</span>
         </h2>
       </div>
-    </header>
+    </div>
   );
 }
