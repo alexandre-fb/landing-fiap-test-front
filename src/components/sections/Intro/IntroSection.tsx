@@ -106,7 +106,6 @@ export default function IntroSection() {
             alt="Mulher sentada em uma almofada em um ambiente moderno com fones de ouvido e uma expressão pensativa."
             fill
             style={{ objectFit: "contain" }}
-            priority
           />
         </div>
 

@@ -60,6 +60,7 @@ export default function Navbar() {
             alt="Logo FIAP"
             fill
             style={{ objectFit: "contain" }}
+            priority
           />
         </div>
       </div>
