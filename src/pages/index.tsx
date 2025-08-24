@@ -4,9 +4,10 @@ import { gsap } from "gsap";
 import styles from "@/styles/Home.module.scss"; 
 import NavbarSection from "@/components/sections/Navbar/NavbarSection";
 import HeaderSection from "@/components/sections/Header/HeaderSection";
-import IntroSection from "@/components/sections/Intro:/IntroSection";
+import IntroSection from "@/components/sections/Intro/IntroSection";
 import CursosSection from "@/components/sections/Cursos/CursosSection/CursosSection";
 import CursosMobileSection from "@/components/sections/Cursos/CursoMobileSection/CursosMobileSection";
+import FaqSection from "@/components/sections/FAQ/FaqSection";
 
 export default function Home() {
   const container = useRef<HTMLDivElement>(null);
@@ -49,6 +50,10 @@ export default function Home() {
           <section>
             <div className={styles.cursosDesktop}><CursosSection /></div>
             <div className={styles.cursosMobile}><CursosMobileSection /></div>
+          </section>
+
+          <section>
+            <FaqSection />
           </section>
         </main>
       </div>

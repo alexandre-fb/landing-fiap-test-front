@@ -1,0 +1,98 @@
+@use "../../../styles/variables.module.scss" as vars;
+
+.faqContainer {
+  min-height: 100vh;
+  max-width: 145rem;
+  margin: 0 auto;
+
+  @media (max-width: vars.$breakpoint-md) {
+    padding: 5.5rem 2rem;
+    min-height: auto;
+  }
+
+  .titleContainer {
+    margin-bottom: 10rem;
+  }
+
+  .faqList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 45rem);
+    gap: 5rem;
+
+    .faqItem {
+      width: 40.5rem;
+      min-height: 19rem;
+      position: relative;
+      padding-top: 3rem;
+
+      @media (max-width: vars.$breakpoint-sm) {
+        width: 80%;
+      }
+
+      &:hover {
+        .faqQuestion {
+          color: vars.$text-primary;
+        }
+
+        &::before {
+          width: 100%;
+        }
+
+        .faqPanel {
+          max-height: 50rem;
+          opacity: 1;
+        }
+      }
+
+      &:focus-within {
+        .faqQuestion {
+          color: vars.$text-primary;
+        }
+
+        &::before {
+          width: 100%;
+        }
+
+        .faqPanel {
+          max-height: 50rem;
+          opacity: 1;
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -1.2rem;
+        left: 0;
+        width: 6.5rem;
+        height: 0.2rem;
+        background: vars.$text-secondary;
+        transition: width 0.2s ease;
+        z-index: 1;
+        opacity: 1;
+      }
+    }
+
+    .faqQuestion {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 1.4rem;
+      color: vars.$text-quaternary;
+      transition: all 200ms ease;
+    }
+
+    .faqPanel {
+      font-size: 1.6rem;
+      color: vars.$text-quaternary;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+
+      p {
+        color: inherit;
+        line-height: 1.2;
+      }
+    }
+  }
+}
