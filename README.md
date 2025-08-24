@@ -59,13 +59,13 @@ Antes de iniciar a implementação, organizei o ambiente e dividi a tarefa em et
 - [ X ] **Instalação de dependências**  
   - [ X ] Instalar [GSAP](https://greensock.com/gsap/) + `@gsap/react` para animações.  
 
-- [ ] **Desenvolvimento das seções**  
+- [ X ] **Desenvolvimento das seções**  
   _Obs.: Para cada seção, testar responsividade e compatibilidade entre os principais navegadores._  
   - [ X ] Navbar com indicação de progresso de navegação da página  
   - [ X ] Header  
   - [ X ] Intro  
-  - [ ] Cursos  
-  - [ ] FAQ  
+  - [ X ] Cursos  
+  - [ X ] FAQ  
   - [ ] Bônus: transição com efeito de água
  
 
