@@ -66,7 +66,7 @@ Antes de iniciar a implementação, organizei o ambiente e dividi a tarefa em et
   - [ X ] Intro  
   - [ X ] Cursos  
   - [ X ] FAQ  
-  - [ ] Bônus: transição com efeito de água
+  - [ X ] Bônus: transição com efeito de água
  
 
 📌 Esse roadmap serviu como guia de desenvolvimento e também como checklist para acompanhar o progresso.  
