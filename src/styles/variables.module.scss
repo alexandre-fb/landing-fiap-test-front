@@ -4,6 +4,7 @@ $text-primary: #ffffff;
 $text-secondary: #ED145B; 
 $text-tertiary: #8A959B;  
 $text-quaternary: #949B99; 
+$text-quinary: #0B0C0D;
 
 // Background colors
 // ==================================
@@ -28,6 +29,7 @@ $breakpoint-lg: 1440px;
   text-secondary: $text-secondary;
   text-tertiary: $text-tertiary;
   text-quaternary: $text-quaternary;
+  text-quinary: $text-quinary;
   bg-primary: $bg-primary;
   bg-secondary: $bg-secondary;
   primary-color: $color-primary;
@@ -37,5 +39,4 @@ $breakpoint-lg: 1440px;
   breakpoint-sm: $breakpoint-sm;
   breakpoint-md: $breakpoint-md;
   breakpoint-lg: $breakpoint-lg;
-
 }
