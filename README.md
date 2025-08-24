@@ -128,3 +128,14 @@ Outro desafio foi a falta de acesso ao **Dev Mode** do Figma, o que impossibilit
 Por conta disso:  
 - Alguns valores de espaçamento e proporção tive que ajustar manualmente.  
 - Em certos casos, fiz cálculos baseados em referências visuais ou em outras telas semelhantes.  
+
+---
+
+## ✅ Conclusão
+
+Este teste técnico foi uma experiência bastante **desafiadora e enriquecedora**.  
+Gostei muito de desenvolver a Landing Page, aplicar animações e explorar soluções para os diferentes pontos apresentados.  
+
+Gostaria de ter tido mais tempo para realizar uma revisão mais aprofundada do código, mas devido à rotina de trabalho e compromissos pessoais e familiares, não consegui dedicar tanto tempo a essa etapa final.  
+
+De toda forma, fico totalmente **à disposição para qualquer esclarecimento** sobre as decisões técnicas tomadas ou para discutir melhorias que poderiam ser implementadas no projeto.  
