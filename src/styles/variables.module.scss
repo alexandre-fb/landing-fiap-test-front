@@ -17,6 +17,7 @@ $bg-secondary: #202121;
 $color-primary: #ED145B;  
 $color-secondary: #8A959B; 
 $color-tertiary: #949B99; 
+$color-quaternary: #566165;
 
 // breakpoints
 // ==================================
@@ -37,6 +38,7 @@ $breakpoint-lg: 1440px;
   primary-color: $color-primary;
   secondary-color: $color-secondary;
   tertiary-color: $color-tertiary;
+  quaternary-color: $color-quaternary;
   breakpoint-xs: $breakpoint-xs;
   breakpoint-sm: $breakpoint-sm;
   breakpoint-md: $breakpoint-md;
