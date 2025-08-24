@@ -1,0 +1,50 @@
+@use "../../../../styles/variables.module.scss" as vars;
+
+.marquee {
+  overflow: hidden;
+  display: flex;
+  --gap: 20px;
+  gap: var(--gap);
+  width: 100%;
+
+  .marqueeList {
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    gap: var(--gap);
+    font-size: 8.3rem;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin: 0;
+    padding: 0;
+
+    &.scrollLeft {
+      animation-name: scrollLeft;
+    }
+
+    &.scrollRight {
+      animation-name: scrollRight;
+    }
+
+
+    @media (max-width: vars.$breakpoint-md) {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@keyframes scrollLeft {
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes scrollRight {
+  from {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
